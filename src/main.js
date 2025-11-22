@@ -12,6 +12,7 @@ import {
   Italic,
   Link,
   AutoLink,
+  List,
 } from "ckeditor5";
 
 import "ckeditor5/ckeditor5.css";
@@ -20,10 +21,30 @@ import "./style.css";
 
 const editorConfig = {
   toolbar: {
-    items: ["undo", "redo", "|", "bold", "italic", "|", "link"],
+    items: [
+      "undo",
+      "redo",
+      "|",
+      "bold",
+      "italic",
+      "|",
+      "link",
+      "|",
+      "bulletedList",
+      "numberedList",
+    ],
     shouldNotGroupWhenFull: false,
   },
-  plugins: [AutoLink, Autosave, Bold, Essentials, Italic, Link, Paragraph],
+  plugins: [
+    AutoLink,
+    Autosave,
+    Bold,
+    Essentials,
+    Italic,
+    Link,
+    List,
+    Paragraph,
+  ],
   initialData: "Congratulations on setting up CKEditor 5! 🎉",
   licenseKey: "GPL", // or <YOUR_LICENSE_KEY>.
   link: {
