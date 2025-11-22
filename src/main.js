@@ -4,6 +4,7 @@ import List from "@editorjs/list";
 import "mathlive";
 import { SimpleImage } from "./simpleImage";
 import { Formula } from "./mathlive";
+import Embed from "@editorjs/embed";
 
 const editorContainer = document.querySelector("#editorjs");
 
@@ -18,6 +19,16 @@ const editor = new EditorJS({
       class: SimpleImage,
       inlineToolbar: true,
     },
+    embed: {
+      class: Embed,
+      config: {
+        services: {
+          youtube: true,
+          instagram: true,
+          twitter: true,
+        },
+      },
+    },
   },
   data: {
     time: 1550476186479,
@@ -30,10 +41,14 @@ const editor = new EditorJS({
         },
       },
       {
-        type: "image",
+        type: "embed",
         data: {
-          url: "https://cdn.pixabay.com/photo/2017/09/01/21/53/blue-2705642_1280.jpg",
-          caption: "A women with blue hair wears a sun glass",
+          service: "youtube",
+          source: "https://www.youtube.com/watch?v=RcVA8Nj6HEo",
+          embed: "https://www.youtube.com/embed/RcVA8Nj6HEo",
+          width: 580,
+          height: 320,
+          caption: "What is PLUS times PLUS?",
         },
       },
     ],
