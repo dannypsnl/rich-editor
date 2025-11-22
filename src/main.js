@@ -13,6 +13,7 @@ import { ColorPickerWithoutSanitize } from "editorjs-color-picker";
 import Quote from "@cychann/editorjs-quote";
 import MermaidTool from "editorjs-mermaid";
 import Table from "@editorjs/table";
+import Marker from "@editorjs/marker";
 
 const editorContainer = document.querySelector("#editorjs");
 
@@ -43,6 +44,10 @@ const editor = new EditorJS({
         defaultType: "verticalLine",
       },
       shortcut: "CMD+SHIFT+O",
+    },
+    Marker: {
+      class: Marker,
+      shortcut: "CMD+SHIFT+M",
     },
     mermaid: MermaidTool,
     table: {
