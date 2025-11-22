@@ -13,3 +13,8 @@
     max-width: 100%;
     margin-bottom: 15px;
 }
+
+math-field {
+  font-size: 1.2em;
+  width: 100%;
+}
