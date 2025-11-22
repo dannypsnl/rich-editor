@@ -17,6 +17,7 @@ import Marker from "@editorjs/marker";
 import Underline from "@editorjs/underline";
 import Strikethrough from "@sotaproject/strikethrough";
 import EditorJSInlineHotkey from "editorjs-inline-hotkey";
+import DragDrop from "editorjs-drag-drop";
 
 const editorContainer = document.querySelector("#editorjs");
 
@@ -98,6 +99,9 @@ const editor = new EditorJS({
         },
       },
     },
+  },
+  onReady: () => {
+    new DragDrop(editor);
   },
   data: {
     time: 1550476186479,
