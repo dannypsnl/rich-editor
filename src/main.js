@@ -14,6 +14,7 @@ import Quote from "@cychann/editorjs-quote";
 import MermaidTool from "editorjs-mermaid";
 import Table from "@editorjs/table";
 import Marker from "@editorjs/marker";
+import Underline from "@editorjs/underline";
 
 const editorContainer = document.querySelector("#editorjs");
 
@@ -22,6 +23,7 @@ const editor = new EditorJS({
   autofocus: true,
   tools: {
     header: Header,
+    underline: Underline,
     list: List,
     formula: Formula,
     image: {

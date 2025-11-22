@@ -25,6 +25,7 @@
     "@editorjs/list": "^2.0.9",
     "@editorjs/marker": "^1.4.0",
     "@editorjs/table": "^2.4.5",
+    "@editorjs/underline": "^1.2.1",
     "@editorjs/warning": "^1.4.1",
     "ckeditor5": "^47.2.0",
     "ckeditor5-premium-features": "^47.2.0",
