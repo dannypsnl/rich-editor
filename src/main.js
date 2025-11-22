@@ -67,6 +67,7 @@ const editor = new EditorJS({
     time: 1550476186479,
     version: "2.8.1",
     blocks: [
+      { type: "header", data: { text: "A demo", level: 1 } },
       {
         type: "formula",
         data: {
