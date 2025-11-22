@@ -16,6 +16,7 @@ import Table from "@editorjs/table";
 import Marker from "@editorjs/marker";
 import Underline from "@editorjs/underline";
 import Strikethrough from "@sotaproject/strikethrough";
+import EditorJSInlineHotkey from "editorjs-inline-hotkey";
 
 const editorContainer = document.querySelector("#editorjs");
 
@@ -26,6 +27,7 @@ const editor = new EditorJS({
     header: Header,
     underline: Underline,
     strikethrough: Strikethrough,
+    InlineHotkey: EditorJSInlineHotkey,
     list: List,
     formula: Formula,
     image: {
