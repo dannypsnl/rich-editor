@@ -13,11 +13,11 @@ const editor = new EditorJS({
   tools: {
     header: Header,
     list: List,
+    formula: Formula,
     image: {
       class: SimpleImage,
       inlineToolbar: true,
     },
-    formula: Formula,
   },
   data: {
     time: 1550476186479,
