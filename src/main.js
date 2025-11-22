@@ -12,6 +12,7 @@ import Alert from "editorjs-alert";
 import { ColorPickerWithoutSanitize } from "editorjs-color-picker";
 import Quote from "@cychann/editorjs-quote";
 import MermaidTool from "editorjs-mermaid";
+import Table from "@editorjs/table";
 
 const editorContainer = document.querySelector("#editorjs");
 
@@ -44,6 +45,16 @@ const editor = new EditorJS({
       shortcut: "CMD+SHIFT+O",
     },
     mermaid: MermaidTool,
+    table: {
+      class: Table,
+      inlineToolbar: true,
+      config: {
+        rows: 2,
+        cols: 3,
+        maxRows: 5,
+        maxCols: 5,
+      },
+    },
     alert: {
       class: Alert,
       inlineToolbar: true,
