@@ -30,20 +30,8 @@ class Formula {
     );
 
     this.wrapper.addEventListener("keydown", (e) => {
-      const navigationKeys = [
-        "ArrowLeft",
-        "ArrowRight",
-        "ArrowUp",
-        "ArrowDown",
-        "Home",
-        "End",
-        "Backspace",
-        "Delete",
-        "Enter",
-      ];
-      if (navigationKeys.includes(e.key)) {
-        e.stopPropagation();
-      }
+      e.stopPropagation();
+      e.preventDefault();
     });
 
     return this.wrapper;
