@@ -21,6 +21,14 @@ class Formula {
   render() {
     this.wrapper = document.createElement("math-field");
     this.wrapper.setValue(this.data.latex);
+    this.wrapper.mathVirtualKeyboardPolicy = "sandboxed";
+    this.wrapper.addEventListener("focusin", (evt) =>
+      window.mathVirtualKeyboard.show()
+    );
+    this.wrapper.addEventListener("focusout", (evt) =>
+      window.mathVirtualKeyboard.hide()
+    );
+
     return this.wrapper;
   }
 
