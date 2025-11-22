@@ -38,6 +38,7 @@ export class Formula {
         "Backspace",
         "Delete",
         "Enter",
+        "/",
       ];
       if (navigationKeys.includes(e.key)) {
         e.stopPropagation();
