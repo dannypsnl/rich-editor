@@ -7,6 +7,7 @@ import Embed from "@editorjs/embed";
 import InlineCode from "@editorjs/inline-code";
 import ToggleBlock from "editorjs-toggle-block";
 import Warning from "@editorjs/warning";
+import Delimiter from "@editorjs/delimiter";
 
 const editorContainer = document.querySelector("#editorjs");
 
@@ -30,6 +31,7 @@ const editor = new EditorJS({
       inlineToolbar: true,
     },
     warning: Warning,
+    delimiter: Delimiter,
     embed: {
       class: Embed,
       config: {
