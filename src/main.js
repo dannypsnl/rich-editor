@@ -8,6 +8,7 @@ import InlineCode from "@editorjs/inline-code";
 import ToggleBlock from "editorjs-toggle-block";
 import Warning from "@editorjs/warning";
 import Delimiter from "@coolbytes/editorjs-delimiter";
+import Alert from "editorjs-alert";
 
 const editorContainer = document.querySelector("#editorjs");
 
@@ -32,6 +33,25 @@ const editor = new EditorJS({
     },
     warning: Warning,
     delimiter: Delimiter,
+    alert: {
+      class: Alert,
+      inlineToolbar: true,
+      shortcut: "CMD+SHIFT+A",
+      config: {
+        alertTypes: [
+          "primary",
+          "secondary",
+          "info",
+          "success",
+          "warning",
+          "danger",
+          "light",
+          "dark",
+        ],
+        defaultType: "primary",
+        messagePlaceholder: "Enter something",
+      },
+    },
     embed: {
       class: Embed,
       config: {

@@ -25,6 +25,7 @@
     "@editorjs/warning": "^1.4.1",
     "ckeditor5": "^47.2.0",
     "ckeditor5-premium-features": "^47.2.0",
+    "editorjs-alert": "^1.1.4",
     "editorjs-toggle-block": "^0.3.16",
     "mathlive": "^0.108.2"
   }
