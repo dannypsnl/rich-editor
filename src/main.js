@@ -10,6 +10,7 @@ import Warning from "@editorjs/warning";
 import Delimiter from "@coolbytes/editorjs-delimiter";
 import Alert from "editorjs-alert";
 import { ColorPickerWithoutSanitize } from "editorjs-color-picker";
+import Quote from "@cychann/editorjs-quote";
 
 const editorContainer = document.querySelector("#editorjs");
 
@@ -34,6 +35,13 @@ const editor = new EditorJS({
     },
     warning: Warning,
     delimiter: Delimiter,
+    quote: {
+      class: Quote,
+      config: {
+        defaultType: "verticalLine",
+      },
+      shortcut: "CMD+SHIFT+O",
+    },
     alert: {
       class: Alert,
       inlineToolbar: true,
