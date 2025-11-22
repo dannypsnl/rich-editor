@@ -11,6 +11,7 @@ import Delimiter from "@coolbytes/editorjs-delimiter";
 import Alert from "editorjs-alert";
 import { ColorPickerWithoutSanitize } from "editorjs-color-picker";
 import Quote from "@cychann/editorjs-quote";
+import MermaidTool from "editorjs-mermaid";
 
 const editorContainer = document.querySelector("#editorjs");
 
@@ -42,6 +43,7 @@ const editor = new EditorJS({
       },
       shortcut: "CMD+SHIFT+O",
     },
+    mermaid: MermaidTool,
     alert: {
       class: Alert,
       inlineToolbar: true,

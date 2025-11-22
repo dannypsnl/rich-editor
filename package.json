@@ -28,6 +28,7 @@
     "ckeditor5-premium-features": "^47.2.0",
     "editorjs-alert": "^1.1.4",
     "editorjs-color-picker": "^1.0.8",
+    "editorjs-mermaid": "^1.0.0",
     "editorjs-toggle-block": "^0.3.16",
     "mathlive": "^0.108.2"
   }
