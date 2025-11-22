@@ -9,6 +9,7 @@ import ToggleBlock from "editorjs-toggle-block";
 import Warning from "@editorjs/warning";
 import Delimiter from "@coolbytes/editorjs-delimiter";
 import Alert from "editorjs-alert";
+import { ColorPickerWithoutSanitize } from "editorjs-color-picker";
 
 const editorContainer = document.querySelector("#editorjs");
 
@@ -51,6 +52,9 @@ const editor = new EditorJS({
         defaultType: "primary",
         messagePlaceholder: "Enter something",
       },
+    },
+    ColorPicker: {
+      class: ColorPickerWithoutSanitize,
     },
     embed: {
       class: Embed,
