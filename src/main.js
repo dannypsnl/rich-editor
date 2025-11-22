@@ -7,7 +7,7 @@ import Embed from "@editorjs/embed";
 import InlineCode from "@editorjs/inline-code";
 import ToggleBlock from "editorjs-toggle-block";
 import Warning from "@editorjs/warning";
-import Delimiter from "@editorjs/delimiter";
+import Delimiter from "@coolbytes/editorjs-delimiter";
 
 const editorContainer = document.querySelector("#editorjs");
 
