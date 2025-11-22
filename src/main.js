@@ -22,6 +22,9 @@ class Formula {
     this.wrapper = document.createElement("math-field");
     this.wrapper.setValue(this.data.latex);
 
+    this.wrapper.macros = {
+      RR: "\\mathbb{R}",
+    };
     this.wrapper.mathVirtualKeyboardPolicy = "sandboxed";
     this.wrapper.addEventListener("focusin", (evt) =>
       window.mathVirtualKeyboard.show()
@@ -43,7 +46,6 @@ class Formula {
       ];
       if (navigationKeys.includes(e.key)) {
         e.stopPropagation();
-        e.preventDefault();
       }
     });
 
