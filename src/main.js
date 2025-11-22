@@ -5,6 +5,7 @@ import { SimpleImage } from "./simpleImage";
 import { Formula } from "./mathlive";
 import Embed from "@editorjs/embed";
 import InlineCode from "@editorjs/inline-code";
+import ToggleBlock from "editorjs-toggle-block";
 
 const editorContainer = document.querySelector("#editorjs");
 
@@ -22,6 +23,10 @@ const editor = new EditorJS({
     inlineCode: {
       class: InlineCode,
       shortcut: "CMD+SHIFT+M",
+    },
+    toggle: {
+      class: ToggleBlock,
+      inlineToolbar: true,
     },
     embed: {
       class: Embed,

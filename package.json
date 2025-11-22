@@ -22,6 +22,7 @@
     "@editorjs/list": "^2.0.9",
     "ckeditor5": "^47.2.0",
     "ckeditor5-premium-features": "^47.2.0",
+    "editorjs-toggle-block": "^0.3.16",
     "mathlive": "^0.108.2"
   }
 }
