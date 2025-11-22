@@ -21,6 +21,7 @@ class Formula {
   render() {
     this.wrapper = document.createElement("math-field");
     this.wrapper.setValue(this.data.latex);
+
     this.wrapper.mathVirtualKeyboardPolicy = "sandboxed";
     this.wrapper.addEventListener("focusin", (evt) =>
       window.mathVirtualKeyboard.show()
@@ -28,10 +29,22 @@ class Formula {
     this.wrapper.addEventListener("focusout", (evt) =>
       window.mathVirtualKeyboard.hide()
     );
-
     this.wrapper.addEventListener("keydown", (e) => {
-      e.stopPropagation();
-      e.preventDefault();
+      const navigationKeys = [
+        "ArrowLeft",
+        "ArrowRight",
+        "ArrowUp",
+        "ArrowDown",
+        "Home",
+        "End",
+        "Backspace",
+        "Delete",
+        "Enter",
+      ];
+      if (navigationKeys.includes(e.key)) {
+        e.stopPropagation();
+        e.preventDefault();
+      }
     });
 
     return this.wrapper;
