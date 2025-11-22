@@ -6,6 +6,7 @@ import { Formula } from "./mathlive";
 import Embed from "@editorjs/embed";
 import InlineCode from "@editorjs/inline-code";
 import ToggleBlock from "editorjs-toggle-block";
+import Warning from "@editorjs/warning";
 
 const editorContainer = document.querySelector("#editorjs");
 
@@ -28,6 +29,7 @@ const editor = new EditorJS({
       class: ToggleBlock,
       inlineToolbar: true,
     },
+    warning: Warning,
     embed: {
       class: Embed,
       config: {

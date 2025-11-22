@@ -20,6 +20,7 @@
     "@editorjs/header": "^2.8.8",
     "@editorjs/inline-code": "^1.5.2",
     "@editorjs/list": "^2.0.9",
+    "@editorjs/warning": "^1.4.1",
     "ckeditor5": "^47.2.0",
     "ckeditor5-premium-features": "^47.2.0",
     "editorjs-toggle-block": "^0.3.16",
