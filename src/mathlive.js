@@ -1,3 +1,5 @@
+import "mathlive";
+
 export class Formula {
   static get toolbox() {
     return {

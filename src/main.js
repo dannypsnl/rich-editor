@@ -1,10 +1,10 @@
 import EditorJS from "@editorjs/editorjs";
 import Header from "@editorjs/header";
 import List from "@editorjs/list";
-import "mathlive";
 import { SimpleImage } from "./simpleImage";
 import { Formula } from "./mathlive";
 import Embed from "@editorjs/embed";
+import InlineCode from "@editorjs/inline-code";
 
 const editorContainer = document.querySelector("#editorjs");
 
@@ -18,6 +18,10 @@ const editor = new EditorJS({
     image: {
       class: SimpleImage,
       inlineToolbar: true,
+    },
+    inlineCode: {
+      class: InlineCode,
+      shortcut: "CMD+SHIFT+M",
     },
     embed: {
       class: Embed,
