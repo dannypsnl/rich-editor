@@ -29,6 +29,23 @@ class Formula {
       window.mathVirtualKeyboard.hide()
     );
 
+    this.wrapper.addEventListener("keydown", (e) => {
+      const navigationKeys = [
+        "ArrowLeft",
+        "ArrowRight",
+        "ArrowUp",
+        "ArrowDown",
+        "Home",
+        "End",
+        "Backspace",
+        "Delete",
+        "Enter",
+      ];
+      if (navigationKeys.includes(e.key)) {
+        e.stopPropagation();
+      }
+    });
+
     return this.wrapper;
   }
 
