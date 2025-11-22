@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>CKEditor 5 Sample</title>
+	</head>
+	<body>
+		<div class="main-container">
+			<div class="presence" id="editor-presence"></div>
+			<div
+				class="editor-container editor-container_balloon-editor editor-container_include-annotations editor-container_include-block-toolbar"
+				id="editor-container"
+			>
+				<div class="editor-container__editor-wrapper">
+					<div class="editor-container__editor"><div id="editor"></div></div>
+					<div class="editor-container__sidebar" id="editor-annotations"></div>
+				</div>
+			</div>
+			<div class="revision-history" id="editor-revision-history">
+				<div class="revision-history__wrapper">
+					<div class="revision-history__editor" id="editor-revision-history-editor"></div>
+					<div class="revision-history__sidebar" id="editor-revision-history-sidebar"></div>
+				</div>
+			</div>
+		</div>
+		<script src="https://cdn.ckbox.io/ckbox/2.6.1/ckbox.js" crossorigin></script>
+		<script type="module" src="/src/main.js"></script>
+	</body>
+</html>
